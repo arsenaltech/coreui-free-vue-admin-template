@@ -10,7 +10,7 @@ export default {
     const brandInfo = getStyle('--light-blue') || '#63c2de'
     const datasets2 = [
       {
-        label: 'My First dataset',
+        label: 'Tickets',
         backgroundColor: brandInfo,
         borderColor: 'rgba(255,255,255,.55)',
         data: [1, 18, 9, 17, 34, 22, 11]

@@ -10,7 +10,7 @@ export default {
     const brandPrimary = getStyle('--primary') || '#20a8d8'
     const datasets1 = [
       {
-        label: 'My First dataset',
+        label: 'Tickets',
         backgroundColor: brandPrimary,
         borderColor: 'rgba(255,255,255,.55)',
         data: [65, 59, 84, 84, 51, 55, 40]

@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+const TicketList = () => import('@/views/base/TicketList')
 
 // Containers
 const DefaultContainer = () => import('@/containers/DefaultContainer')
@@ -18,6 +19,7 @@ const Cards = () => import('@/views/base/Cards')
 const Forms = () => import('@/views/base/Forms')
 const Switches = () => import('@/views/base/Switches')
 const Tables = () => import('@/views/base/Tables')
+
 const Tabs = () => import('@/views/base/Tabs')
 const Breadcrumbs = () => import('@/views/base/Breadcrumbs')
 const Carousels = () => import('@/views/base/Carousels')
@@ -151,7 +153,7 @@ export default new Router({
             {
               path: 'tables',
               name: 'Tables',
-              component: Tables
+              component: TicketList
             },
             {
               path: 'tabs',

@@ -13,8 +13,8 @@
               <b-dropdown-item>Something else here...</b-dropdown-item>
               <b-dropdown-item disabled>Disabled action</b-dropdown-item>
             </b-dropdown>
-            <h4 class="mb-0">9.823</h4>
-            <p>Members online</p>
+            <h4 class="mb-0">200</h4>
+            <p>Ready to Invoice</p>
           </b-card-body>
           <card-line1-chart-example chartId="card-chart-01" class="chart-wrapper px-3" style="height:70px;" :height="70"/>
         </b-card>
@@ -31,8 +31,8 @@
               <b-dropdown-item>Something else here...</b-dropdown-item>
               <b-dropdown-item disabled>Disabled action</b-dropdown-item>
             </b-dropdown>
-            <h4 class="mb-0">9.823</h4>
-            <p>Members online</p>
+            <h4 class="mb-0">343</h4>
+            <p>Open Tickets</p>
           </b-card-body>
           <card-line2-chart-example chartId="card-chart-02" class="chart-wrapper px-3" style="height:70px;" :height="70"/>
         </b-card>
@@ -49,8 +49,8 @@
               <b-dropdown-item>Something else here...</b-dropdown-item>
               <b-dropdown-item disabled>Disabled action</b-dropdown-item>
             </b-dropdown>
-            <h4 class="mb-0">9.823</h4>
-            <p>Members online</p>
+            <h4 class="mb-0">232</h4>
+            <p>Due today</p>
           </b-card-body>
           <card-line3-chart-example chartId="card-chart-03" class="chart-wrapper" style="height:70px;" height="70"/>
         </b-card>
@@ -67,8 +67,8 @@
               <b-dropdown-item>Something else here...</b-dropdown-item>
               <b-dropdown-item disabled>Disabled action</b-dropdown-item>
             </b-dropdown>
-            <h4 class="mb-0">9.823</h4>
-            <p>Members online</p>
+            <h4 class="mb-0">3453</h4>
+            <p>Delayed Tickets</p>
           </b-card-body>
           <card-bar-chart-example chartId="card-chart-04" class="chart-wrapper px-3" style="height:70px;" height="70"/>
         </b-card>
@@ -78,8 +78,8 @@
     <b-card>
       <b-row>
         <b-col sm="5">
-          <h4 id="traffic" class="card-title mb-0">Traffic</h4>
-          <div class="small text-muted">November 2017</div>
+          <h4 id="traffic" class="card-title mb-0">Tickets</h4>
+          <div class="small text-muted">September 2018</div>
         </b-col>
         <b-col sm="7" class="d-none d-md-block">
           <b-button type="button" variant="primary" class="float-right"><i class="icon-cloud-download"></i></b-button>
@@ -96,30 +96,16 @@
       <div slot="footer">
         <b-row class="text-center">
           <b-col class="mb-sm-2 mb-0">
-            <div class="text-muted">Visits</div>
-            <strong>29.703 Users (40%)</strong>
-            <b-progress height={} class="progress-xs mt-2" :precision="1" variant="success" :value="40"></b-progress>
+            <div class="text-muted">Finished</div>
+            <strong>23740</strong>
+            <b-progress height={} class="progress-xs mt-2" :precision="1" variant="success" :value="80"></b-progress>
           </b-col>
           <b-col class="mb-sm-2 mb-0 d-md-down-none">
-            <div class="text-muted">Unique</div>
-            <strong>24.093 Users (20%)</strong>
-            <b-progress height={} class="progress-xs mt-2" :precision="1" variant="info" :value="20"></b-progress>
+            <div class="text-muted">Tickets</div>
+            <strong>29,703</strong>
+            <b-progress height={} class="progress-xs mt-2" :precision="1" variant="info" :value="100"></b-progress>
           </b-col>
-          <b-col class="mb-sm-2 mb-0">
-            <div class="text-muted">Pageviews</div>
-            <strong>78.706 Views (60%)</strong>
-            <b-progress height={} class="progress-xs mt-2" :precision="1" variant="warning" :value="60"></b-progress>
-          </b-col>
-          <b-col class="mb-sm-2 mb-0">
-            <div class="text-muted">New Users</div>
-            <strong>22.123 Users (80%)</strong>
-            <b-progress height={} class="progress-xs mt-2" :precision="1" variant="danger" :value="80"></b-progress>
-          </b-col>
-          <b-col class="mb-sm-2 mb-0 d-md-down-none">
-            <div class="text-muted">Bounce Rate</div>
-            <strong>Average Rate (40.15%)</strong>
-            <b-progress height={} class="progress-xs mt-2" :precision="1" :value="40"></b-progress>
-          </b-col>
+
         </b-row>
       </div>
     </b-card>
@@ -127,7 +113,7 @@
       <b-col sm="6" lg="3">
         <div class="brand-card">
           <div class="brand-card-header bg-facebook">
-            <i class="fa fa-facebook"></i>
+            <i class="fa">PrePress</i>
             <div class="chart-wrapper">
               <social-box-chart-example chartId="box-chart-01" :data="[65, 59, 84, 84, 51, 55, 40]" />
             </div>
@@ -135,11 +121,11 @@
           <div class="brand-card-body">
             <div>
               <div class="text-value">89k</div>
-              <div class="text-uppercase text-muted small">friends</div>
+              <div class="text-uppercase text-muted small">due today</div>
             </div>
             <div>
               <div class="text-value">459</div>
-              <div class="text-uppercase text-muted small">feeds</div>
+              <div class="text-uppercase text-muted small">delayed</div>
             </div>
           </div>
         </div>
@@ -147,7 +133,7 @@
       <b-col sm="6" lg="3">
         <div class="brand-card">
           <div class="brand-card-header bg-twitter">
-            <i class="fa fa-twitter"></i>
+            <i class="fa ">Print</i>
             <div class="chart-wrapper">
               <social-box-chart-example chartId="box-chart-02" :data="[1, 13, 9, 17, 34, 41, 38]" />
             </div>
@@ -155,11 +141,11 @@
           <div class="brand-card-body">
             <div>
               <div class="text-value">973k</div>
-              <div class="text-uppercase text-muted small">followers</div>
+              <div class="text-uppercase text-muted small">due today</div>
             </div>
             <div>
               <div class="text-value">1.792</div>
-              <div class="text-uppercase text-muted small">tweets</div>
+              <div class="text-uppercase text-muted small">delayed</div>
             </div>
           </div>
           </div>
@@ -167,7 +153,7 @@
       <b-col sm="6" lg="3">
         <div class="brand-card">
           <div class="brand-card-header bg-linkedin">
-            <i class="fa fa-linkedin"></i>
+            <i class="fa ">Mount</i>
             <div class="chart-wrapper">
               <social-box-chart-example chartId="box-chart-03" :data="[78, 81, 80, 45, 34, 12, 40]" />
             </div>
@@ -175,11 +161,11 @@
           <div class="brand-card-body">
             <div>
               <div class="text-value">500+</div>
-              <div class="text-uppercase text-muted small">contacts</div>
+              <div class="text-uppercase text-muted small">due today</div>
             </div>
             <div>
               <div class="text-value">292</div>
-              <div class="text-uppercase text-muted small">feeds</div>
+              <div class="text-uppercase text-muted small">delayed</div>
             </div>
           </div>
         </div>
@@ -187,7 +173,7 @@
       <b-col sm="6" lg="3">
         <div class="brand-card">
           <div class="brand-card-header bg-google-plus">
-            <i class="fa fa-google-plus"></i>
+            <i class="fa ">Install</i>
             <div class="chart-wrapper">
               <social-box-chart-example chartId="box-chart-04" :data="[35, 23, 56, 22, 97, 23, 64]" />
             </div>
@@ -195,11 +181,11 @@
           <div class="brand-card-body">
             <div>
               <div class="text-value">894</div>
-              <div class="text-uppercase text-muted small">followers</div>
+              <div class="text-uppercase text-muted small">due today</div>
             </div>
             <div>
               <div class="text-value">92</div>
-              <div class="text-uppercase text-muted small">circles</div>
+              <div class="text-uppercase text-muted small">delayed</div>
             </div>
           </div>
         </div>
@@ -207,14 +193,14 @@
     </b-row>
     <b-row>
       <b-col md="12">
-        <b-card header="Traffic &amp; Sales">
+        <b-card header="Sales">
           <b-row>
             <b-col sm="12" lg="6">
               <b-row>
                 <b-col sm="6">
                   <Callout variant="info">
                     <small class="text-muted">New Clients</small><br>
-                    <strong class="h4">9,123</strong>
+                    <strong class="h4">10</strong>
                     <div class="chart-wrapper" :style="{ top: '-10px'}">
                       <!--<callout-chart-example :data="[35, 23, 56, 22, 97, 23, 64]" variant="#20a8d8" width="80" height="30" />-->
                       <callout-chart-example chartId="callout-chart-01" :data="[35, 23, 56, 22, 97, 23, 64]" variant="info" width="80" height="30" />
@@ -224,7 +210,7 @@
                 <b-col sm="6">
                   <Callout variant="danger">
                     <small class="text-muted">Recurring Clients</small><br>
-                    <strong class="h4">22,643</strong>
+                    <strong class="h4">145</strong>
                     <div class="chart-wrapper" :style="{ top: '-10px'}">
                       <callout-chart-example chartId="callout-chart-02" :data="[65, 59, 84, 84, 51, 55, 40]" variant="danger" width="80" height="30" />
                     </div>
@@ -323,8 +309,8 @@
               <b-row>
                 <b-col sm="6">
                   <Callout variant="warning">
-                    <small class="text-muted">Pageviews</small><br>
-                    <strong class="h4">78,623</strong>
+                    <small class="text-muted">New Clients</small><br>
+                    <strong class="h4">$8,623</strong>
                     <div class="chart-wrapper" :style="{ top: '-10px'}">
                       <callout-chart-example chartId="callout-chart-03" :data="[35, 23, 56, 22, 97, 23, 64]" variant="#f8cb00" width="80" height="30"/>
                     </div>
@@ -332,8 +318,8 @@
                 </b-col>
                 <b-col sm="6">
                   <Callout variant="success">
-                    <small class="text-muted">Organic</small><br>
-                    <strong class="h4">49,123</strong>
+                    <small class="text-muted">Recurring Clients</small><br>
+                    <strong class="h4">$49,123</strong>
                     <div class="chart-wrapper" :style="{ top: '-10px'}">
                       <callout-chart-example chartId="callout-chart-04" :data="[65, 59, 84, 84, 51, 55, 40]" variant="#4dbd74" width="80" height="30" />
                     </div>
@@ -344,8 +330,8 @@
               <ul class="horizontal-bars type-2">
                 <div class="progress-group">
                   <div class="progress-group-header">
-                    <i class="icon-user progress-group-icon"></i>
-                    <span class="title">Male</span>
+                    <i class="fa fa-money progress-group-icon"></i>
+                    <span class="title">New</span>
                     <span class="ml-auto font-weight-bold">43%</span>
                   </div>
                   <div class="progress-group-bars">
@@ -354,8 +340,8 @@
                 </div>
                 <div class="progress-group mb-5">
                   <div class="progress-group-header">
-                    <i class="icon-user-female progress-group-icon"></i>
-                    <span class="title">Female</span>
+                    <i class="fa fa-money progress-group-icon"></i>
+                    <span class="title">Recurring</span>
                     <span class="ml-auto font-weight-bold">37%</span>
                   </div>
                   <div class="progress-group-bars">
@@ -364,9 +350,9 @@
                 </div>
                 <div class="progress-group">
                   <div class="progress-group-header">
-                    <i class="icon-globe progress-group-icon"></i>
-                    <span class="title">Organic Search</span>
-                    <span class="ml-auto font-weight-bold">191,235 <span class="text-muted small">(56%)</span></span>
+                    <i class="icon-user progress-group-icon"></i>
+                    <span class="title">Dan</span>
+                    <span class="ml-auto font-weight-bold">$191,235 <span class="text-muted small">(56%)</span></span>
                   </div>
                   <div class="progress-group-bars">
                     <b-progress height={} class="progress-xs" :value="56" variant="success"></b-progress>
@@ -374,9 +360,9 @@
                 </div>
                 <div class="progress-group">
                   <div class="progress-group-header">
-                    <i class="icon-social-facebook progress-group-icon"></i>
-                    <span class="title">Facebook</span>
-                    <span class="ml-auto font-weight-bold">51,223 <span class="text-muted small">(15%)</span></span>
+                    <i class="icon-user progress-group-icon"></i>
+                    <span class="title">Rick</span>
+                    <span class="ml-auto font-weight-bold">$51,223 <span class="text-muted small">(15%)</span></span>
                   </div>
                   <div class="progress-group-bars">
                     <b-progress height={} class="progress-xs" :value="15" variant="success"></b-progress>
@@ -384,9 +370,9 @@
                 </div>
                 <div class="progress-group">
                   <div class="progress-group-header">
-                    <i class="icon-social-twitter progress-group-icon"></i>
-                    <span class="title">Twitter</span>
-                    <span class="ml-auto font-weight-bold">37,564 <span class="text-muted small">(11%)</span></span>
+                    <i class="icon-user-female progress-group-icon"></i>
+                    <span class="title">Sales 1</span>
+                    <span class="ml-auto font-weight-bold">$37,564 <span class="text-muted small">(11%)</span></span>
                   </div>
                   <div class="progress-group-bars">
                     <b-progress height={} class="progress-xs" :value="11" variant="success"></b-progress>
@@ -394,9 +380,9 @@
                 </div>
                 <div class="progress-group">
                   <div class="progress-group-header">
-                    <i class="icon-social-linkedin progress-group-icon"></i>
-                    <span class="title">LinkedIn</span>
-                    <span class="ml-auto font-weight-bold">27,319 <span class="text-muted small">&nbsp;(8%)</span></span>
+                    <i class="icon-user-female progress-group-icon"></i>
+                    <span class="title">Sales 2</span>
+                    <span class="ml-auto font-weight-bold">$27,319 <span class="text-muted small">&nbsp;(8%)</span></span>
                   </div>
                   <div class="progress-group-bars">
                     <b-progress height={} class="progress-xs" :value="8" variant="success"></b-progress>
@@ -423,18 +409,12 @@
                 </span> | Registered: {{item.value.registered}}
               </div>
             </div>
-            <i slot="country" class="h4 mb-0" :class="flag(item.value.flag)" slot-scope="item" :title="item.value.flag" :id="item.value.flag"></i>
-            <i class="flag-icon flag-icon-pw h1" title="pw" id="pw"></i>
+            <div slot="country"  slot-scope="item"><span>{{item.value.name}}</span></div>
+
             <div slot="usage" slot-scope="item">
-              <div class="clearfix">
-                <div class="float-left">
-                  <strong>{{item.value.value}}%</strong>
-                </div>
-                <div class="float-right">
-                  <small class="text-muted">{{item.value.period}}</small>
-                </div>
+              <div class="float-right">
+                <strong>${{item.value.value}}</strong>
               </div>
-              <b-progress height={} class="progress-xs" v-model="item.value.value" :variant="variant(item.value.value)"></b-progress>
             </div>
             <i slot="payment" slot-scope="item" :class="item.value.icon" style="font-size:24px"></i>
             <div slot="activity" slot-scope="item">
@@ -474,51 +454,44 @@ export default {
     return {
       selected: 'Month',
       tableItems: [
-        {
-          avatar: { url: 'img/avatars/1.jpg', status: 'success' },
-          user: { name: 'Yiorgos Avraamu', new: true, registered: 'Jan 1, 2015' },
-          country: { name: 'USA', flag: 'us' },
-          usage: { value: 50, period: 'Jun 11, 2015 - Jul 10, 2015' },
-          payment: { name: 'Mastercard', icon: 'fa fa-cc-mastercard' },
-          activity: '10 sec ago'
-        },
+
         {
           avatar: { url: 'img/avatars/2.jpg', status: 'danger' },
-          user: { name: 'Avram Tarasios', new: false, registered: 'Jan 1, 2015' },
-          country: { name: 'Brazil', flag: 'br' },
-          usage: { value: 22, period: 'Jun 11, 2015 - Jul 10, 2015' },
+          user: { name: 'Open Road Films', new: false, registered: 'Jan 1, 2015' },
+          country: { name: 'Los Angeles, CA', flag: 'br' },
+          usage: { value: 2200, period: 'Jun 11, 2015 - Jul 10, 2015' },
           payment: { name: 'Visa', icon: 'fa fa-cc-visa' },
           activity: '5 minutes ago'
         },
         {
           avatar: { url: 'img/avatars/3.jpg', status: 'warning' },
-          user: { name: 'Quintin Ed', new: true, registered: 'Jan 1, 2015' },
-          country: { name: 'India', flag: 'in' },
-          usage: { value: 74, period: 'Jun 11, 2015 - Jul 10, 2015' },
+          user: { name: 'Pantelion', new: true, registered: 'Jan 1, 2015' },
+          country: { name: 'New York, NY', flag: 'in' },
+          usage: { value: 7234, period: 'Jun 11, 2015 - Jul 10, 2015' },
           payment: { name: 'Stripe', icon: 'fa fa-cc-stripe' },
           activity: '1 hour ago'
         },
         {
           avatar: { url: 'img/avatars/4.jpg', status: '' },
-          user: { name: 'Enéas Kwadwo', new: true, registered: 'Jan 1, 2015' },
-          country: { name: 'France', flag: 'fr' },
-          usage: { value: 98, period: 'Jun 11, 2015 - Jul 10, 2015' },
+          user: { name: 'Warner Bros', new: true, registered: 'Jan 1, 2015' },
+          country: { name: 'Chicago, IL', flag: 'fr' },
+          usage: { value: 1298, period: 'Jun 11, 2015 - Jul 10, 2015' },
           payment: { name: 'PayPal', icon: 'fa fa-paypal' },
           activity: 'Last month'
         },
         {
           avatar: { url: 'img/avatars/5.jpg', status: 'success' },
-          user: { name: 'Agapetus Tadeáš', new: true, registered: 'Jan 1, 2015' },
-          country: { name: 'Spain', flag: 'es' },
-          usage: { value: 22, period: 'Jun 11, 2015 - Jul 10, 2015' },
+          user: { name: 'Disney', new: true, registered: 'Jan 1, 2015' },
+          country: { name: 'San Fransisco, CA', flag: 'es' },
+          usage: { value: 5622, period: 'Jun 11, 2015 - Jul 10, 2015' },
           payment: { name: 'Google Wallet', icon: 'fa fa-google-wallet' },
           activity: 'Last week'
         },
         {
           avatar: { url: 'img/avatars/6.jpg', status: 'danger' },
-          user: { name: 'Friderik Dávid', new: true, registered: 'Jan 1, 2015' },
-          country: { name: 'Poland', flag: 'pl' },
-          usage: { value: 43, period: 'Jun 11, 2015 - Jul 10, 2015' },
+          user: { name: 'Marvel', new: true, registered: 'Jan 1, 2015' },
+          country: { name: 'Atlanta, GA', flag: 'pl' },
+          usage: { value: 4233, period: 'Jun 11, 2015 - Jul 10, 2015' },
           payment: { name: 'Amex', icon: 'fa fa-cc-amex' },
           activity: 'Last week'
         }
@@ -529,21 +502,16 @@ export default {
           class: 'text-center'
         },
         user: {
-          label: 'User'
+          label: 'Customer'
         },
         country: {
-          label: 'Country',
+          label: 'Location',
           class: 'text-center'
         },
         usage: {
-          label: 'Usage'
-        },
-        payment: {
-          label: 'Payment method',
-          class: 'text-center'
-        },
-        activity: {
-          label: 'Activity'
+          label: 'Revenue',
+          class: 'text-right'
+
         }
       }
     }

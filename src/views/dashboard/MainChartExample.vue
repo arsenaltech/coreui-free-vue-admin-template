@@ -43,15 +43,6 @@ export default {
           pointHoverBackgroundColor: '#fff',
           borderWidth: 2,
           data: data2
-        },
-        {
-          label: 'My Third dataset',
-          backgroundColor: 'transparent',
-          borderColor: brandDanger,
-          pointHoverBackgroundColor: '#fff',
-          borderWidth: 1,
-          borderDash: [8, 5],
-          data: data3
         }
       ]
     }, {
