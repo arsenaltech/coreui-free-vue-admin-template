@@ -10,35 +10,34 @@ export default {
     },
     {
       name: 'Job Tickets',
-      url: '/notifications',
+      url: '/tickets/list',
       icon: 'icon-bell',
       children: [
         {
           name: 'Open',
-          url: '/base/tables',
+          url: '/tickets/list',
           icon: 'icon-puzzle'
         },
         {
           name: 'Assinged to Me',
-          url: '/base/cards',
+          url: '/tickets/list',
           icon: 'icon-puzzle'
         },
         {
           name: 'Due Today',
-          url: '/base/carousels',
+          url: '/tickets/list',
           icon: 'icon-puzzle'
         },
         {
           name: 'Ready to Invoice',
-          url: '/base/carousels',
+          url: '/tickets/list',
           icon: 'icon-puzzle'
         }]
     },
-
     {
       name: 'Customers',
-      url: '/theme/typography',
-      icon: 'icon-pencil'
+      url: '/customers',
+      icon: 'icon-user'
     },
     {
       name: 'Products',
@@ -47,7 +46,7 @@ export default {
       children: [
         {
           name: 'Items',
-          url: '/base/tables',
+          url: '#',
           icon: 'icon-puzzle'
         },
         {
@@ -77,7 +76,7 @@ export default {
     },
     {
       name: 'Invoices',
-      url: '/charts',
+      url: '/invoices',
       icon: 'icon-pie-chart'
     },{
       name: 'Estimates',
@@ -173,12 +172,6 @@ export default {
       icon: 'icon-cloud-download',
       class: 'mt-auto',
       variant: 'success'
-    },
-    {
-      name: 'Try CoreUI PRO',
-      url: 'http://coreui.io/pro/vue/',
-      icon: 'icon-layers',
-      variant: 'danger'
     }
   ]
 }

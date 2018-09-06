@@ -5,9 +5,6 @@
             <template slot="status" slot-scope="data">
                 <b-badge :variant="getBadge(data.item.status)">{{data.item.status}}</b-badge>
             </template>
-            <template slot="jobid" slot-scope="data">
-                <router-link  to="/tickets/view">{{data.item.jobid}}</router-link>
-            </template>
         </b-table>
         <nav>
             <b-pagination :total-rows="getRowCount(items)" :per-page="perPage" v-model="currentPage" prev-text="Prev"

@@ -7,13 +7,8 @@
         <img class="navbar-brand-minimized" src="img/ov_logo.png" height="30" alt="CoreUI Logo">
       </b-link>
       <SidebarToggler class="d-md-down-none" display="lg" />
-      <b-form-group
-                  label-for="lgInput"
-                  label-size="lg"
-                  :label-cols="0"
-                  :horizontal="true">
-            <b-form-input id="lgInput" type="text" size="lg" placeholder="Search"></b-form-input>
-      </b-form-group>
+        <div class="col-lg-6 d-md-down-none">
+        <b-form-input type="text" placeholder="Search.." size="lg" ></b-form-input></div>
       <b-navbar-nav class="ml-auto">
         <b-nav-item class="d-md-down-none">
           <i class="icon-bell"></i>
@@ -52,12 +47,12 @@
     <TheFooter>
       <!--footer-->
       <div>
-        <a href="https://coreui.io">CoreUI</a>
-        <span class="ml-1">&copy; 2018 creativeLabs.</span>
+        <a href="https://Olsonvisual.com">Olsonvisual</a>
+        <span class="ml-1">&copy; 2018.</span>
       </div>
       <div class="ml-auto">
         <span class="mr-1">Powered by</span>
-        <a href="https://coreui.io">CoreUI for Vue</a>
+        <a href="https://Olsonvisual.com">Custom ERP</a>
       </div>
     </TheFooter>
   </div>

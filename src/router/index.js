@@ -1,6 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 const TicketList = () => import('@/views/base/TicketList')
+const TicketView = () => import('@/views/tickets/View.vue')
+
+const InvoiceList = () => import('@/views/base/InvoiceList')
+const CustomerList = () => import('@/views/base/CustomerList')
+
 
 // Containers
 const DefaultContainer = () => import('@/containers/DefaultContainer')
@@ -128,9 +133,45 @@ export default new Router({
           ]
         },
         {
+          path: 'invoices',
+          name: 'Invoices',
+          component: InvoiceList
+
+        },{
+          path: 'customers',
+          name: 'Customers',
+          component: CustomerList
+
+        },
+        {
+          path: 'tickets',
+          redirect: '/tickets/list',
+          name: 'Job Tickets',
+          component: {
+            render (c) { return c('router-view') }
+          },
+          children: [
+            {
+              path: 'list',
+              name: 'Tickets',
+              component: TicketList
+            },
+            {
+              path: 'create',
+              name: 'New Ticket',
+              component: Forms
+            },
+            {
+              path: 'view',
+              name: 'View',
+              component: TicketView
+            }
+          ]
+        },
+        {
           path: 'base',
           redirect: '/base/cards',
-          name: 'Base',
+          name: 'Job Tickets',
           component: {
             render (c) { return c('router-view') }
           },
@@ -151,8 +192,8 @@ export default new Router({
               component: Switches
             },
             {
-              path: 'tables',
-              name: 'Tables',
+              path: 'tickets',
+              name: 'Tickets',
               component: TicketList
             },
             {
