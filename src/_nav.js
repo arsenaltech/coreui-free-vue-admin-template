@@ -14,6 +14,11 @@ export default {
       icon: 'icon-bell',
       children: [
         {
+            name: 'Create New',
+            url: '/tickets/create',
+            icon: 'icon-puzzle'
+        },
+        {
           name: 'Open',
           url: '/tickets/list',
           icon: 'icon-puzzle'

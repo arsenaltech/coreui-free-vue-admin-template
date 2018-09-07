@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 const TicketList = () => import('@/views/base/TicketList')
 const TicketView = () => import('@/views/tickets/View.vue')
+const TicketCreate = () => import('@/views/tickets/Create.vue')
 
 const InvoiceList = () => import('@/views/base/InvoiceList')
 const CustomerList = () => import('@/views/base/CustomerList')
@@ -179,6 +180,11 @@ export default new Router({
               path: 'view',
               name: 'View',
               component: TicketView
+            },
+            {
+                path: 'create',
+                name: 'create',
+                component: TicketCreate
             }
           ]
         },
