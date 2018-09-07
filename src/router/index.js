@@ -5,6 +5,8 @@ const TicketView = () => import('@/views/tickets/View.vue')
 
 const InvoiceList = () => import('@/views/base/InvoiceList')
 const CustomerList = () => import('@/views/base/CustomerList')
+const Backlog = () => import('@/views/reports/Backlog')
+const Calendar = () => import('@/views/reports/Calendar')
 
 
 // Containers
@@ -141,6 +143,18 @@ export default new Router({
           path: 'customers',
           name: 'Customers',
           component: CustomerList
+
+        },
+        {
+          path: 'backlog',
+          name: 'Backlog',
+          component: Backlog
+
+        },
+        {
+          path: 'calendar',
+          name: 'Calendar',
+          component: Calendar
 
         },
         {

@@ -130,7 +130,11 @@ export default {
         }
       ]
     },
-
+    {
+      name: 'Backlog',
+      url: '/backlog',
+      icon: 'icon-pie-chart'
+    },
     {
       name: 'Admin',
       url: '/base',
