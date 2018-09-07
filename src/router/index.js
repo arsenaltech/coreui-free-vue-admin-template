@@ -172,11 +172,6 @@ export default new Router({
               component: TicketList
             },
             {
-              path: 'create',
-              name: 'New Ticket',
-              component: Forms
-            },
-            {
               path: 'view',
               name: 'View',
               component: TicketView
