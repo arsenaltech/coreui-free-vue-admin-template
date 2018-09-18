@@ -74,78 +74,103 @@
             <h6 class="border-bottom pb-2 mt-3">Select Product</h6>
             <b-row>
                 <b-col cols="6" sm="4" md="3" lg="2">
-                    <div class="text-center">
-                    <i class="fa fa-circle fa-2x text-primary"></i><br>Banner
+                    <div class="text-center" @click="setProduct('Banner')">
+                    <i class="fa fa-circle fa-2x "
+                       :class="{'text-primary': (product === 'Banner'), 'text-secondary': (product !== 'Banner')}"
+                       ></i><br>Banner
                     </div>
                 </b-col>
                 <b-col cols="6" sm="4" md="3" lg="2">
-                    <div class="text-center">
-                        <i class="fa fa-circle fa-2x text-secondary"></i><br>Rigid
+                    <div class="text-center" @click="setProduct('Rigid')">
+                      <i class="fa fa-circle fa-2x "
+                         :class="{'text-primary': (product === 'Rigid'), 'text-secondary': (product !== 'Rigid')}"
+                         ></i><br>Rigid
                     </div>
                 </b-col>
                 <b-col cols="6" sm="4" md="3" lg="2">
-                    <div class="text-center">
-                        <i class="fa fa-circle fa-2x text-secondary"></i><br>Textile
+                    <div class="text-center" @click="setProduct('Textile')">
+                      <i class="fa fa-circle fa-2x "
+                         :class="{'text-primary': (product === 'Textile'), 'text-secondary': (product !== 'Textile')}"
+                         ></i><br>Textile
                     </div>
                 </b-col>
                 <b-col cols="6" sm="4" md="3" lg="2">
-                    <div class="text-center">
-                        <i class="fa fa-circle fa-2x text-secondary"></i><br>Unmounted
+                    <div class="text-center" @click="setProduct('Unmounted')">
+                      <i class="fa fa-circle fa-2x "
+                         :class="{'text-primary': (product === 'Unmounted'), 'text-secondary': (product !== 'Unmounted')}"
+                         ></i><br>Unmounted
                     </div>
                 </b-col>
 
             </b-row>
-
+<div v-if="product !== ''">
                 <h6 class="border-bottom pb-2 mt-3">Finishing</h6>
                 <b-row>
                     <b-col cols="6" sm="4" md="3" lg="2">
-                        <div class="text-center">
-                            <i class="fa fa-circle fa-2x text-primary"></i><br>Finished
+                        <div class="text-center" @click="setFinishing('Finished')">
+                            <i
+                              class="fa fa-circle fa-2x"
+                              :class="{'text-primary': (finishing === 'Finished'), 'text-secondary': (finishing !== 'Finished')}"
+                            ></i><br>Finished
                         </div>
                     </b-col>
                     <b-col cols="6" sm="4" md="3" lg="2">
-                        <div class="text-center">
-                            <i class="fa fa-circle fa-2x text-secondary"></i><br>Framed
+                        <div class="text-center"  @click="setFinishing('Framed')">
+                            <i class="fa fa-circle fa-2x"
+                               :class="{'text-primary': (finishing === 'Framed'), 'text-secondary': (finishing !== 'Framed')}"
+                            ></i><br>Framed
                         </div>
                     </b-col>
                     <b-col cols="6" sm="4" md="3" lg="2">
-                        <div class="text-center">
-                            <i class="fa fa-circle fa-2x text-secondary"></i><br>Structure
+                        <div class="text-center"  @click="setFinishing('Structure')">
+                            <i class="fa fa-circle fa-2x"
+                               :class="{'text-primary': (finishing === 'Structure'), 'text-secondary': (finishing !== 'Structure')}"
+                            ></i><br>Structure
                         </div>
                     </b-col>
 
                 </b-row>
-
+</div>
+              <div  v-if="finishing !== ''">
                 <h6 class="border-bottom pb-2 mt-3">Sides</h6>
                 <b-row>
                     <b-col cols="6" sm="4" md="3" lg="2">
-                        <div class="text-center">
-                            <i class="fa fa-circle fa-2x text-primary"></i><br>Single Sided
+                        <div class="text-center"  @click="setSides('Single Sided')">
+                            <i class="fa fa-circle fa-2x "
+                               :class="{'text-primary': (sides === 'Single Sided'), 'text-secondary': (sides !== 'Single Sided')}"></i><br>Single Sided
                         </div>
                     </b-col>
                     <b-col cols="6" sm="4" md="3" lg="2">
-                        <div class="text-center">
-                            <i class="fa fa-circle fa-2x text-secondary"></i><br>Double Sided
+                        <div class="text-center" @click="setSides('Double Sided')">
+                            <i class="fa fa-circle fa-2x "
+                               :class="{'text-primary': (sides === 'Double Sided'), 'text-secondary': (sides !== 'Double Sided')}"
+                            ></i><br>Double Sided
                         </div>
                     </b-col>
 
                 </b-row>
+              </div>
+              <div  v-if="sides !== ''">
 
                 <h6 class="border-bottom pb-2 mt-3">Lite</h6>
                 <b-row>
                     <b-col cols="6" sm="4" md="3" lg="2">
-                        <div class="text-center">
-                            <i class="fa fa-circle fa-2x text-primary"></i><br>Frontlit
+                        <div class="text-center"  @click="setLight('Frontlit')">
+                            <i class="fa fa-circle fa-2x "
+                               :class="{'text-primary': (light === 'Frontlit'), 'text-secondary': (light !== 'Frontlit')}"
+                            ></i><br>Frontlit
                         </div>
                     </b-col>
                     <b-col cols="6" sm="4" md="3" lg="2">
-                        <div class="text-center">
-                            <i class="fa fa-circle fa-2x text-secondary"></i><br>Backlit
+                        <div class="text-center"  @click="setLight('Backlit')">
+                            <i class="fa fa-circle fa-2x"
+                               :class="{'text-primary': (light === 'Backlit'), 'text-secondary': (light !== 'Backlit')}"
+                            ></i><br>Backlit
                         </div>
                     </b-col>
 
                 </b-row>
-
+              </div>
 
             </b-card>
 
@@ -181,11 +206,34 @@
     data () {
       return {
         selected: [], // Must be an array reference!
-        show: true
+        show: true,
+        product: '',
+        finishing: '',
+        sides: '',
+        light: ''
       }
     },
     methods: {
-      click () {
+      setProduct (value) {
+        this.product = value
+        this.finishing = ''
+        this.sides = ''
+        this.light = ''
+        // do nothing
+      },
+      setFinishing (value) {
+        this.finishing = value;
+        this.sides = ''
+        this.light = ''
+        // do nothing
+      },
+      setSides (value) {
+        this.sides = value
+        this.light = ''
+        // do nothing
+      },
+      setLight (value) {
+        this.light = value
         // do nothing
       }
     }
