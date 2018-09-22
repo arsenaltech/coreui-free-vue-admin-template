@@ -8,6 +8,8 @@ const InvoiceList = () => import('@/views/base/InvoiceList')
 const CustomerList = () => import('@/views/base/CustomerList')
 const Backlog = () => import('@/views/reports/Backlog')
 const Calendar = () => import('@/views/reports/Calendar')
+const ProductCreate = () => import('@/views/products/Create')
+
 
 
 // Containers
@@ -178,8 +180,33 @@ export default new Router({
             },
             {
                 path: 'create',
-                name: 'create',
+                name: 'Create',
                 component: TicketCreate
+            }
+          ]
+        },
+        {
+          path: 'products',
+          redirect: '/products/list',
+          name: 'Products',
+          component: {
+            render (c) { return c('router-view') }
+          },
+          children: [
+            {
+              path: 'list',
+              name: 'Tickets',
+              component: TicketList
+            },
+            {
+              path: 'view',
+              name: 'View',
+              component: TicketView
+            },
+            {
+              path: 'create',
+              name: 'Create',
+              component: ProductCreate
             }
           ]
         },

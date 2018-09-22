@@ -66,8 +66,16 @@
                 </b-col>
                 <b-col sm="6">
                     <b-form-group>
-                        <h6>Quantity</h6>
-                        <b-form-input type="text" id="po" placeholder="PO"></b-form-input>
+                        <b-row>
+                            <b-col sm="4">
+                                <h6>Quantity</h6>
+                                <b-form-input type="text" id="po" placeholder="qty"></b-form-input>                            </b-col>
+                            <b-col sm="4">
+                                <h6>Cost</h6>
+                                <b-form-input type="text" placeholder="cost"></b-form-input>
+                            </b-col>
+                        </b-row>
+
                     </b-form-group>
                 </b-col>
             </b-row>
@@ -181,19 +189,69 @@
         </tab-content>
         <tab-content title="Other Information"
                      icon="fa fa-info">
-            My second tab content
+            <b-row>
+                <b-col sm="6">
+                    <b-card header="Shipping Information">
+                        <textarea class="form-control" rows="3"></textarea>
+                    </b-card>
+                </b-col>
+
+                <b-col sm="6">
+                    <b-card header="Installation">
+                        <textarea class="form-control" rows="3"></textarea>
+                    </b-card>
+                </b-col>
+            </b-row>
         </tab-content>
         <tab-content title="Confirmation"
                      icon="fa fa-check">
-            Yuhuuu! This seems pretty damn simple
+
+
+            <div class="dd">
+                <ol class="dd-list">
+                    <li class="dd-item" data-id="1">
+                        <div class="dd-handle">Item 1</div>
+                    </li>
+                    <li class="dd-item" data-id="2">
+                        <div class="dd-handle">Item 2</div>
+                    </li>
+                    <li class="dd-item" data-id="3">
+                        <div class="dd-handle">Item 3</div>
+                        <ol class="dd-list">
+                            <li class="dd-item" data-id="4">
+                                <div class="dd-handle">Item 4</div>
+                            </li>
+                            <li class="dd-item" data-id="5" data-foo="bar">
+                                <div class="dd-handle">Item 5</div>
+                            </li>
+                            <li class="dd-item" data-id="5" data-foo="bar">
+                                <div class="dd-handle">Item 5</div>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+            </div>
+
+
         </tab-content>
+
+
+
     </form-wizard>
     </b-card>
+
+
+
+
 </template>
 
 <script>
   import {FormWizard, TabContent} from 'vue-form-wizard'
   import 'vue-form-wizard/dist/vue-form-wizard.min.css'
+  import 'nestable2/dist/jquery.nestable.min.css'
+
+  window.jQuery = require('jquery')
+  require('nestable2')
   //component code
 
 
@@ -236,6 +294,13 @@
         this.light = value
         // do nothing
       }
+    },
+
+    mounted: function () {
+      jQuery('.dd').nestable({
+            maxDepth: 10000
+      });
+
     }
   }
 </script>

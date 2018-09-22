@@ -46,12 +46,12 @@ export default {
     },
     {
       name: 'Products',
-      url: '/notifications',
+      url: '/products',
       icon: 'icon-bell',
       children: [
         {
           name: 'Items',
-          url: '#',
+          url: '/products/create',
           icon: 'icon-puzzle'
         },
         {
