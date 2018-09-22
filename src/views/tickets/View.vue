@@ -49,6 +49,9 @@
                       <table class="table">
                         <tbody>
                         <tr>
+                          <td><strong>Product:</strong> Banner </td>
+                        </tr>
+                        <tr>
                           <td><strong>Size:</strong> 23x12 </td>
                         </tr>
                         <tr>
@@ -74,6 +77,10 @@
                         <tr>
 
                           <td><strong>Sides:</strong> Single Sides</td>
+                        </tr>
+                        <tr>
+
+                          <td><strong>Notes:</strong> This is item note</td>
                         </tr>
 
                         </tbody>
@@ -177,16 +184,58 @@
 
                   </div>
                 </b-tab>
+                <b-tab>
+                  <template slot="title">
+                    <i class="icon-layers"></i>Attachments
+                  </template>
+
+                  <table class="table table-responsive-sm">
+                    <thead>
+                    <tr>
+                      <th>Type</th>
+                      <th>Date </th>
+                      <th>File</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td><span class="badge badge-primary">PDF</span></td>
+                      <td>2012/01/01</td>
+                      <td><a href="#">Spider Man Poster.pdf</a> </td>
+
+                    </tr>
+                    <tr>
+                      <td><span class="badge badge-primary">PDF</span></td>
+                      <td>2012/01/01</td>
+                      <td><a href="#">Spider Man Poster.jpg</a> </td>
+                    </tr>
+                    <tr>
+                      <td><span class="badge badge-primary">JPG</span></td>
+                      <td>2012/01/01</td>
+                      <td><a href="#">Hulk Smash Poster.jpg</a> </td>
+                    </tr>
+
+                    </tbody>
+                  </table>
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">Choose file</label>
+                  </div>
+                </b-tab>
+
               </b-tabs>
               <b-tabs class="mt-4">
                 <b-tab title="Item info" active>
                   <b-row>
                     <b-col md="2">
-                      <img src="https://via.placeholder.com/200x200" class="rounded float-left">
+                      <img src="https://via.placeholder.com/200x200" class="rounded">
                     </b-col>
                     <b-col md="10">
                       <table class="table">
                         <tbody>
+                        <tr>
+                          <td><strong>Product:</strong> Banner </td>
+                        </tr>
                         <tr>
                           <td><strong>Size:</strong> 23x12 </td>
                         </tr>
@@ -213,6 +262,10 @@
                         <tr>
 
                           <td><strong>Sides:</strong> Single Sides</td>
+                        </tr>
+                        <tr>
+
+                          <td><strong>Notes:</strong> This is item note</td>
                         </tr>
 
                         </tbody>
@@ -316,6 +369,45 @@
 
                   </div>
                 </b-tab>
+                <b-tab>
+                  <template slot="title">
+                    <i class="icon-layers"></i>Attachments
+                  </template>
+
+                  <table class="table table-responsive-sm">
+                    <thead>
+                    <tr>
+                      <th>Type</th>
+                      <th>Date </th>
+                      <th>File</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td><span class="badge badge-primary">PDF</span></td>
+                      <td>2012/01/01</td>
+                      <td><a href="#">Spider Man Poster.pdf</a> </td>
+
+                    </tr>
+                    <tr>
+                      <td><span class="badge badge-primary">PDF</span></td>
+                      <td>2012/01/01</td>
+                      <td><a href="#">Spider Man Poster.jpg</a> </td>
+                    </tr>
+                    <tr>
+                      <td><span class="badge badge-primary">JPG</span></td>
+                      <td>2012/01/01</td>
+                      <td><a href="#">Hulk Smash Poster.jpg</a> </td>
+                    </tr>
+
+                    </tbody>
+                  </table>
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">Choose file</label>
+                  </div>
+                </b-tab>
+
               </b-tabs>
               <b-row class="mt-4">
                 <b-col md="12">

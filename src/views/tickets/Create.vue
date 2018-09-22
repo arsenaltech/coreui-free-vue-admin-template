@@ -182,10 +182,73 @@
 
             </b-card>
 
+          <b-card header="Notes & Attachment">
+
+            <b-row>
+              <b-col sm="6">
+                  <textarea class="form-control" rows="3"></textarea>
+              </b-col>
+
+              <b-col sm="6">
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="customFile">
+                  <label class="custom-file-label" for="customFile">Choose file</label>
+                </div>
+              </b-col>
+            </b-row>
+
+
+          </b-card>
+
         </tab-content>
         <tab-content title="Review Items"
                      icon="fa fa-cart-arrow-down">
-            My second tab content
+          <table id="cart" class="table table-hover table-condensed">
+            <thead>
+            <tr>
+              <th style="width:50%">Product</th>
+              <th style="width:10%">Price</th>
+              <th style="width:8%">Quantity</th>
+              <th style="width:22%" class="text-right">Subtotal</th>
+              <th style="width:10%"></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td data-th="Product">
+                <div class="row">
+                  <div class="col-sm-2 hidden-xs"><img src="http://placehold.it/100x100" alt="..." class="img-responsive"/></div>
+                  <div class="col-sm-10">
+                    <h4 class="nomargin">Banner 1</h4>
+                    <p>
+                      <strong>Size:</strong> 100x120<br/>
+                      <strong>Finishing:</strong> Framed<br/>
+                      <strong>Sides:</strong> Single Sided<br/>
+                      <strong>Lit:</strong> Frontlit<br/>
+                    </p>
+                  </div>
+                </div>
+              </td>
+              <td data-th="Price">$1.99</td>
+              <td data-th="Quantity">
+                <input type="number" class="form-control text-center" value="1">
+              </td>
+              <td data-th="Subtotal" class="text-right">$1.99</td>
+              <td class="actions" data-th="">
+                <button class="btn btn-info btn-sm"><i class="fa fa-copy" title="Clone item"></i></button>
+                <button class="btn btn-info btn-sm"><i class="fa fa-edit"></i></button>
+                <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3" class="hidden-xs"></td>
+              <td class="hidden-xs text-right"><strong>Total $1.99</strong></td>
+              <td></td>
+            </tr>
+            </tbody>
+
+
+          </table>
         </tab-content>
         <tab-content title="Other Information"
                      icon="fa fa-info">
@@ -202,35 +265,28 @@
                     </b-card>
                 </b-col>
             </b-row>
+          <b-card header="Notes & Attachment">
+
+            <b-row>
+              <b-col sm="6">
+                <textarea class="form-control" rows="3"></textarea>
+              </b-col>
+
+              <b-col sm="6">
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="customFile">
+                  <label class="custom-file-label" for="customFile">Choose file</label>
+                </div>
+              </b-col>
+            </b-row>
+
+
+          </b-card>
         </tab-content>
         <tab-content title="Confirmation"
                      icon="fa fa-check">
 
-
-            <div class="dd">
-                <ol class="dd-list">
-                    <li class="dd-item" data-id="1">
-                        <div class="dd-handle">Item 1</div>
-                    </li>
-                    <li class="dd-item" data-id="2">
-                        <div class="dd-handle">Item 2</div>
-                    </li>
-                    <li class="dd-item" data-id="3">
-                        <div class="dd-handle">Item 3</div>
-                        <ol class="dd-list">
-                            <li class="dd-item" data-id="4">
-                                <div class="dd-handle">Item 4</div>
-                            </li>
-                            <li class="dd-item" data-id="5" data-foo="bar">
-                                <div class="dd-handle">Item 5</div>
-                            </li>
-                            <li class="dd-item" data-id="5" data-foo="bar">
-                                <div class="dd-handle">Item 5</div>
-                            </li>
-                        </ol>
-                    </li>
-                </ol>
-            </div>
+          <h4>Job ticket #1234 is successfully created! It's due on Feb 15th 2019. </h4>
 
 
         </tab-content>
@@ -249,9 +305,6 @@
   import {FormWizard, TabContent} from 'vue-form-wizard'
   import 'vue-form-wizard/dist/vue-form-wizard.min.css'
   import 'nestable2/dist/jquery.nestable.min.css'
-
-  window.jQuery = require('jquery')
-  require('nestable2')
   //component code
 
 
@@ -297,9 +350,7 @@
     },
 
     mounted: function () {
-      jQuery('.dd').nestable({
-            maxDepth: 10000
-      });
+
 
     }
   }
